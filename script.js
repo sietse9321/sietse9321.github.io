@@ -1,8 +1,9 @@
+
 let prevScrollpos = window.scrollY;
 
 window.onscroll = function() {
   let currentScrollPos = window.scrollY;
-
+// moves the navbar up or down if prevscrollpos is bigger or smaller
   if (prevScrollpos > currentScrollPos) {
     document.querySelector('.navbar').style.top = '0';
   } else {

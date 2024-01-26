@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>About me</title>
+    <title>Contact</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -54,38 +54,34 @@
     </header>
 
     <main class="container-fluid" style="max-width: 70%;">
-
-        <section id="featured">
-            <h1>Hello, I'm Sietse Houkes</h1>
-            <p>Web Developer | Game Enthusiast | Creative Coder</p>
-            <p>I'm a student with a passion for bringing ideas to life through game design. My hobbies mostly revolve
-                around playing games with friends or watching anime. Lately, I've been exploring drawing just for fun.
-            </p>
-            <div class="details">
-                <p><strong>Current Focus: </strong>Trying out new programming languages and blender.</p>
-                <p><strong>Favorite Games: </strong>Currently hooked on <em>way too many games</em>, and always open to
-                    recommendations!</p>
-                <p><strong>Future Aspirations: </strong>Planning to delve deeper into game development and contribute to
-                    the gaming industry with innovative ideas and projects.</p>
-                <p><strong>Fun Fact: </strong>I enjoy experimenting with all kinds of things like coding or blender.</p>
-            </div>
-        </section>
         <section>
-            <h1>Programming Languages</h1>
-            <p><strong>C#</strong>, see sharp is my mostly used language, I use this for Unity and MonoGame Framework.</p>
-            <p><strong>HTML, CSS and JavaScript</strong>, I use these for creating this website also use Bootstrap with html </p>
-        </section>
-        <section>
-            <h1>Learning</h1>
-            <p><strong>Blender: </strong>I'm trying to learn Blender to create model and structures to use in games.</p>
-            <p><strong>Unreal and c++: </strong>Will soon pickup unreal engine to create games and c++.</p>
-        </section>
+            <form action="action_page.php">
 
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                    <option value="australia">Australia</option>
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                </select>
+
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+                <input type="submit" value="Submit">
+
+            </form>
+        </section>
     </main>
     <footer class="footer" style="color:white;">
         <p style="display: flex; justify-content:space-around; margin: auto; max-width:300px; margin-top: -10px; margin-bottom: 20px;">
-            <a href="https://www.youtube.com/channel/UCQSaHRoz0EkAQQDhZ1YDaYg" target="_blank"> <i class="fa-brands fa-youtube" style="text-decoration: none; color:red"></i></a>
-            <a href="contact.html"> <i class="fa-regular fa-envelope-open" style="text-decoration: none; color:rgb(255, 123, 0);"></i></a>
+            <a href="https://www.youtube.com/channel/UCQSaHRoz0EkAQQDhZ1YDaYg" target="_blank"><i class="fa-brands fa-youtube" style="text-decoration: none; color:red"></i></a>
+            <a href="contact.html"><i class="fa-regular fa-envelope-open" style="text-decoration: none; color:rgb(255, 123, 0);"></i></a>
             <a href="https://www.github.com/sietse9321" target="_blank"><i class="fa fa-github" style="font-size:36px; text-decoration: none; color:rgb(185, 185, 185);"></i></a>
         </p>
         <p>&copy; 2024 Sietse Houkes. All rights reserved.</p>
