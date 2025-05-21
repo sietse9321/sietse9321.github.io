@@ -11,3 +11,11 @@ window.onscroll = function() {
   }
   prevScrollpos = currentScrollPos
 };
+
+// Initialize skill progress bars on page load
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.skill-progress').forEach(progress => {
+    const level = progress.getAttribute('data-level');
+    progress.style.setProperty('--progress', level);
+  });
+});
