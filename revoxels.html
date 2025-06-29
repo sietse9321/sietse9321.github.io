@@ -4,77 +4,144 @@
 <head>
     <title>RE:Voxels</title>
     <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
 
     <!-- Bootstrap CSS v5.2.1 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"/>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="./dist/background.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+          integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="Scripts/script.js"></script>
 </head>
 
 <body>
-    <div id='stars'></div>
-    <div id='stars2'></div>
-    <div id='stars3'></div>
+<div id='stars'></div>
+<div id='stars2'></div>
+<div id='stars3'></div>
 
-    <div id="header-placeholder"></div>
-    <script src="Scripts/includeHeader.js"></script>
+<div id="header-placeholder"></div>
+<script src="Scripts/includeHeader.js"></script>
 
-    <main class="container-fluid col-12 col-md-10 col-lg-9 col-xl-8">
-        <section>
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-sm text-center">
-                        <img src="img" alt="x" style="position: relative; max-width: 100%; height:auto;" class="mx-auto d-block">
-                    </div>
-                    <div class="col-sm">
-                        <H1>RE:Voxels</H1><br>
-                        <p>RE:Voxels is a...</p>
-                        <p>
-                            <strong>Genre: </strong><br><strong>Platform:
-                            </strong>PC
-                        </p>
-                    </div>
+<main class="container-fluid col-12 col-md-10 col-lg-9 col-xl-8">
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm text-center">
+                    <img src="img" alt="x" style="position: relative; max-width: 100%; height:auto;"
+                         class="mx-auto d-block">
+                </div>
+                <div class="col-sm">
+                    <H1>RE:Voxels</H1><br>
+                    <p>
+                        <strong>RE:Voxels</strong> is a voxel-based open-world RPG built with Unity, offering a dynamic
+                        and interactive sandbox experience.
+                        It features procedural terrain generation, allowing players to explore, and fight in a colorful
+                        low-poly world.
+                        Originally developed as a school project, RE:Voxels showcases practical programming skills and
+                        game design using C# and Unity tools.
+                    </p>
+                    <p>
+                        <strong>Genre:</strong> Open-world RPG<br>
+                        <strong>Platform:</strong> PC
+                        <strong>Engine:</strong> Unity3D
+                        <strong>
+                            <a href="https://github.com/sietse9321/procedural-terrain/releases" download>
+                                RE:Voxels Github
+                            </a>
+                        </strong>
+                    </p>
                 </div>
             </div>
-        </section>
-        <section>
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-sm">
-                        <h2>Code example</h2><br>
-                        <P> </P>
-                        <p><br> <br></p>
-                    </div>
-                    <div class="col-sm text-center">
-                        <img src="img" alt="x" style="position: relative; max-width: 100%; height:auto;" class="mx-auto d-block">
-                    </div>
+        </div>
+    </section>
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm">
+                    <h2>Code example</h2><br>
+                    <p>
+                        In this code I generate terrain using fractal noise. For each grid point, a height value is
+                        calculated and shaped using bias and power to control the terrain's steepness.
+                    </p>
+                    <p>
+                        Each point becomes a vertex in 3D space, and after all points are placed, the heights are
+                        normalized and colored using a gradient. This gives the terrain natural-looking elevation and
+                        smooth color transitions.
+                    </p>
+                    <p>
+                        It’s used in <strong>RE:Voxels</strong> to create colorful, procedural terrain chunks.
+                    </p>
+
+                </div>
+                <div class="col-sm text-center">
+                    <img src="img/MeshGeneration.png" alt="x" style="position: relative; max-width: 100%; height:auto;"
+                         class="mx-auto d-block">
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm text-center">
+                    <img src="img/Menu.png" alt="Game Main Menu"
+                         style="position: relative; max-width: 100%; height:auto;" class="mx-auto d-block">
+                    <p>
+                        The main menu allows you to enter a custom seed for world generation, giving you the option to
+                        explore a familiar landscape or leave it blank to let the game surprise you with a new,
+                        procedurally-generated map each time you play.
+                    </p>
+                </div>
+                <div class="col-sm text-center">
+                    <p>
+                        In this in-game moment, the player is being chased by the formidable boss—defeating it
+                        is essential to progress and proves your skill within the dynamic and colorful voxel world.
+                    </p>
+                    <img src="img/InGameSS.png" alt="In-Game Screenshot: Boss Chase"
+                         style="position: relative; max-width: 100%; height:auto;" class="mx-auto d-block">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm text-center">
+                    <video width="640" height="480" controls>
+                        <source src="img/ReVoxels%20Gameplay2.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="col-sm text-center" style="display: flex; align-items: center; justify-content: center;">
+                    <p>Here's a quick look at some gameplay footage. This might change in the future.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
 
-    </main>
-    <footer class="footer" style="color:white;">
-        <p style="display: flex; justify-content:space-around; margin: auto; max-width:300px; margin-top: -10px; margin-bottom: 20px;">
-            <a href="https://www.youtube.com/channel/UCQSaHRoz0EkAQQDhZ1YDaYg" target="_blank"> <i class="fa-brands fa-youtube" style="text-decoration: none; color:red"></i></a>
-            <a href="contact.html"> <i class="fa-regular fa-envelope-open" style="text-decoration: none; color:rgb(255, 123, 0);"></i></a>
-            <a href="https://www.github.com/sietse9321" target="_blank"><i class="fa fa-github" style="font-size:36px; text-decoration: none; color:rgb(185, 185, 185);"></i></a>
-        </p>
-        <p>&copy; 2024 Sietse Houkes. All rights reserved.</p>
-    </footer>
-    <!-- Bootstrap JavaScript Libraries -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+<footer class="footer" style="color:white;">
+    <p style="display: flex; justify-content:space-around; margin: auto; max-width:300px; margin-top: -10px; margin-bottom: 20px;">
+        <a href="https://www.youtube.com/channel/UCQSaHRoz0EkAQQDhZ1YDaYg" target="_blank"> <i
+                class="fa-brands fa-youtube" style="text-decoration: none; color:red"></i></a>
+        <a href="contact.html"> <i class="fa-regular fa-envelope-open"
+                                   style="text-decoration: none; color:rgb(255, 123, 0);"></i></a>
+        <a href="https://www.github.com/sietse9321" target="_blank"><i class="fa fa-github"
+                                                                       style="font-size:36px; text-decoration: none; color:rgb(185, 185, 185);"></i></a>
+    </p>
+    <p>&copy; 2024 Sietse Houkes. All rights reserved.</p>
+</footer>
+<!-- Bootstrap JavaScript Libraries -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
         crossorigin="anonymous"></script>
 </body>
